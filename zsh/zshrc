@@ -36,10 +36,6 @@ bindkey '^X^E' edit-command-line
 #export NVM_DIR=~/.nvm
 #source $(brew --prefix nvm)/nvm.sh
 
-# starscream env setup:
-export WORKON_HOME=~/.virtualenvs
-source $(brew --prefix)/bin/virtualenvwrapper.sh
-
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 
 # Shopify stuff - Dont commit
