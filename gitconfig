@@ -13,6 +13,9 @@
 	clear-merges = !git branch -d `git branch --merged | grep -v \"^*\" | tr -d \"\\n\"`
 
 [push]
+  default = current
+[pull]
+  rebase = true
 	default = current
 [color]
  	ui = auto
@@ -34,13 +37,8 @@
 	changed = green
 	untracked = cyan
 [core]
-	autocrlf = false
- 	excludesfile = ~/.gitignore
-[pull]
-	rebase = true
-	default = current
-[url "git@github.com:"]
-	insteadOf = https://github.com/
+  autocrlf = false
+	excludesfile = ~/.gitignore
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
