@@ -13,9 +13,9 @@
 	clear-merges = !git branch -d `git branch --merged | grep -v \"^*\" | tr -d \"\\n\"`
 
 [push]
-  default = current
+        default = current
 [pull]
-  rebase = true
+	rebase = true
 	default = current
 [color]
  	ui = auto
@@ -37,7 +37,7 @@
 	changed = green
 	untracked = cyan
 [core]
-  autocrlf = false
+        autocrlf = false
 	excludesfile = ~/.gitignore
 [filter "lfs"]
 	clean = git-lfs clean %f
