@@ -1,7 +1,21 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
 [user]
-	name = Celso Dantas
-	email = celsodantas@gmail.com
+	name = Karim Mansour
+	email = karim.mansour@booking.com
+[pack]
+	windowMemory = 100m
+	SizeLimit = 100m
+	threads = 1
+[color]
+	ui = true
+[core]
+	editor = mate -w
 [alias]
+	hist = log --all --graph --decorate --oneline
 	s  = status
  	st = status
  	ci = commit
@@ -11,7 +25,6 @@
  	amend = commit --amend
 
 	clear-merges = !git branch -d `git branch --merged | grep -v \"^*\" | tr -d \"\\n\"`
-
 [push]
 	default = current
 [pull]
@@ -19,6 +32,8 @@
 	default = current
 [color]
  	ui = auto
+	autocrlf = false
+	excludesfile = ~/.gitignore
 [color]
 	branch = auto
 	diff = auto
@@ -36,10 +51,3 @@
 	added = yellow
 	changed = green
 	untracked = cyan
-[core]
-        autocrlf = false
-	excludesfile = ~/.gitignore
-[filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
