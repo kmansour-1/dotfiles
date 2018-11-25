@@ -10,10 +10,13 @@
 	windowMemory = 100m
 	SizeLimit = 100m
 	threads = 1
-[color]
-	ui = true
 [core]
 	editor = mate -w
+	excludesfile = /Users/kmansour/.gitignore
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[pager]
+       diff = diff-so-fancy | less --tabs=1,5 -RFX
+       show = diff-so-fancy | less --tabs=1,5 -RFX
 [alias]
 	hist = log --all --graph --decorate --oneline
 	s  = status
@@ -31,10 +34,9 @@
 	rebase = true
 	default = current
 [color]
- 	ui = auto
+	ui = true
 	autocrlf = false
 	excludesfile = ~/.gitignore
-[color]
 	branch = auto
 	diff = auto
 	status = auto
@@ -43,11 +45,17 @@
 	local = yellow
 	remote = green
 [color "diff"]
-	meta = yellow bold
+	meta = yellow
 	frag = magenta bold
-	old = red
-	new = cyan
+	old = red bold
+	new = green bold
+	commit = yellow bold
 [color "status"]
 	added = yellow
 	changed = green
 	untracked = cyan
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
