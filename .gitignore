@@ -1,4 +1,2 @@
-!vim/bundle/
-vim/bundle/*
-!vim/bundle/vundle/
+.git_status_cache
 .DS_Store
