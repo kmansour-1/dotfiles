@@ -5,7 +5,7 @@
 	required = true
 [user]
 	name = Karim Mansour
-	email = karim.mansour@booking.com
+	email = karim.mansour@gmail.com
 [pack]
 	windowMemory = 100m
 	SizeLimit = 100m
