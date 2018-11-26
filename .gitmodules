@@ -2,9 +2,6 @@
 path = vendor/zsh-syntax-highlighting
 url = git@github.com:zsh-users/zsh-syntax-highlighting.git
 
-[submodule "vendor/my-gruvbox-vim-theme"]
-path = vendor/my-gruvbox-vim-theme
-url = https://github.com/kmansou/gruvbox
 [submodule "vendor/gruvbox"]
 	path = vendor/gruvbox
 	url = https://github.com/kmansou/gruvbox
