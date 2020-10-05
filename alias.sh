@@ -28,5 +28,4 @@ alias preview="fzf --preview 'bat --color \"always\" {}'"
 # tldr instead of man
 alias help='tldr'
 
-# booking_dev_env
-alias gomain='cd ~/git_tree/main'
+alias preview="fzf --preview 'bat --color \"always\" {}'"
